@@ -1,0 +1,90 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer{
+    color: #fed44c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3rem;
+}
+.formForConversion{
+    margin: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coinImage{
+    width: 70px;
+    height: 70px;
+    margin-bottom: -50px;
+}
+
+.heading{
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+input{
+    padding: 0.5rem;
+    font-size: 1.6rem;
+
+    border-radius: 20px;
+
+}
+
+.custom-select {
+    /* Apply styles to the <select> element */
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .custom-select option {
+    /* Apply styles to the <option> elements */
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+  }
+  .custom-button {
+    background-color: #fed44c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .custom-button:hover {
+    background-color: #ffb529; /* Change the background color on hover */
+  }
+
+  .result{
+    margin: 2rem;
+    font-size: 1.2rem;
+  }
+  .error{
+    color:lightcoral;
+
+  }
