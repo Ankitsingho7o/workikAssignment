@@ -3,9 +3,11 @@ const amount = document.querySelector("#amount")
 const firstCurrency = document.querySelector("#firstCurrency")
 const convert = document.querySelector("#convert")
 const result = document.querySelector(".result h3")
+const body = document.querySelector("body")
 async function getOptions() {
     try {
         const response = await fetch("https://v6.exchangerate-api.com/v6/c260713e80b076aa379cdf2a/codes")
+       
         const resOptions = await response.json();
         const options = resOptions.supported_codes.slice(0, 70);
         // console.log(options);
@@ -18,6 +20,8 @@ async function getOptions() {
         }
 
     } catch (err) {
+        body.innerHTML ="<h1>Sorry But something went Wrong</h1>"
+
         console.log(err);
     }
 }
@@ -46,6 +50,7 @@ firstCurrency.addEventListener("change", async (e) => {
 
         }
     } catch (err) {
+        body.innerHTML ="<h1>Sorry But something went Wrong</h1>"
         console.log(err);
     }
 })
